@@ -1,0 +1,135 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "Vnet_Name" : {
+            "value": "VNET1"
+        },
+        "Vnet_Address" : {
+            "value": "192.168.0.0/16"
+        },
+        "Vnet_Tags" : {
+            "value": {
+                "Env"   : "Testing",
+                "Owner" :  "John"
+            }
+        },
+        "Subnet_Name" : {
+            "value": "Subnet1"
+        },
+        "Subnet_Address" : {
+            "value": "192.168.0.0/24"
+        },
+        "NSG_Name" : {
+            "value":"NSG1"
+        },
+        "NSG_Rule_Name" : {
+            "value": "Rule1"
+        },
+        "NSG_Rule_Description" : {
+            "value": "Subnet1 NSG"
+        },
+        "NSG_Rule_Protocol" : {
+            "value":"*"
+        },
+        "NSG_Rule_Source_Port_Range" : {
+            "value": "*"
+        },
+        "NSG_Rule_Destination_Port_Range" : {
+            "value": "*"
+        },
+        "NSG_Rule_Source_Address_Prefix" : {
+            "value": "*"
+        },
+        "NSG_Rule_Destination_Address_Prefix" : {
+            "value": "*"
+        },
+        "NSG_Rule_Access" : {
+            "value": "Allow"
+        },
+        "NSG_Rule_Priority": {
+            "value": "100"
+        },
+        "NSG_Rule_Direction": {
+            "value": "Inbound"
+        },
+        "NSG_Tags": {
+            "value": {
+                "Env"   : "Testing",
+                "Owner" :  "John"
+            }
+        },
+        "Public_IP_Name": {
+            "value": ["publicip1", "publicip2"]
+        },
+        "Public_IP_Allocation": {
+            "value": ["Dynamic", "Dynamic"]    
+        },
+        "Public_IP_DNS_Name": {
+            "value": ["dns10221", "dns10222"]
+        },
+        "Public_IP_Tags": {
+            "value": {
+                "Env"   : "Testing",
+                "Owner" :  "John"
+            }
+        },
+        "NIC_Name": {
+            "value": ["NIC-1", "NIC-2"]
+        },
+        "NIC_Tags": {
+            "value": {
+                "Env"   : "Testing",
+                "Owner" :  "John"
+            }
+        },
+        "NIC_IP_Confg_Name": {
+            "value": ["NIC-IP-1", "NIC-IP-2"]
+        },
+        "NIC_Private_IP_Allocation": {
+            "value": ["Dynamic", "Dynamic"]
+        },
+        "Windows_VM_Name": {
+            "value": ["Windows-VM-1", "Windows-VM-2"]
+        },
+        "Windows_VM_Size": {
+            "value": ["Standard_B2s", "Standard_B2s"]
+        },
+        "Windows_VM_Username": {
+            "value": ["webuser1", "webuser2"]
+        },
+        "Windows_VM_Password": {
+            "value": ["@Webuser123", "@Webuser123"]
+        },
+        "Windows_VM_Image_Publisher": {
+            "value": ["MicrosoftWindowsServer", "MicrosoftWindowsServer"]
+        },
+        "Windows_VM_Image_Offer": {
+            "value": ["WindowsServer","WindowsServer"]
+        },
+        "Windows_VM_Image_SKU": {
+            "value": ["2019-Datacenter", "2019-Datacenter"]
+        },
+        "Windows_VM_Image_Version": {
+            "value": ["latest", "latest"]
+        },
+        "Windows_VM_OsDisk_Name": {
+            "value": ["Windows-VM-Disk-1", "Windows-VM-Disk-2"]
+        },
+        "Windows_VM_OsDisk_Caching": {
+            "value": ["ReadWrite", "ReadWrite"]
+        },
+        "Windows_VM_Creation_Option": {
+            "value": ["FromImage", "FromImage"]
+        },
+        "Windows_VM_Boot_Diagnostics_Enabled": {
+            "value" : ["true", "true"]
+        },
+        "Windows_VM_Tags": {
+            "value": {
+                "Env"   : "Testing",
+                "Owner" :  "John"
+            }
+        }
+    }
+}
